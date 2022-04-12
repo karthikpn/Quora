@@ -1,0 +1,65 @@
+.navbar {
+  width: 100vw;
+  height: 8vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar__brand:first-child {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar__search {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar__search__input {
+  width: 95%;
+  height: 2rem;
+  outline: none;
+  border: 1px solid lightgray;
+  padding: 1rem;
+}
+.navbar__search__button {
+  height: 2rem;
+  background-color: #149bfc;
+  border: none;
+  padding: 1rem;
+}
+.navbar__options {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar__link {
+  text-decoration: none;
+  color: black;
+}
+.navbar__link__login {
+  padding: 0.5rem 2.5rem;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  border-radius: 4%;
+}
+.navbar__link__login:hover {
+  animation: background_color 3s infinite;
+}
+
+@keyframes background_color {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
